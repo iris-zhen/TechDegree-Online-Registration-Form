@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name=viewport content="width=device-width, initial-scale=1.0">
+<title>My Form</title>
+<link rel="stylesheet" href="css/normalize.css">
+<link href="https://fonts.googleapis.com/css?family=Merriweather:300i,400,700" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">	
+</head>
+<body>
+	<header class="main-header">The Code Review</header>
+	<div class="main-wrapper">
+		<form action="index.html" method="post">
+			<div class="header-info">
+				<h1 class="header-h1">Signup for our newsletter</h1>
+				<p class="header-p">Get the latest news on how your code is doing right in your inbox</p>
+			</div>
+			<div class="contact-fieldset">
+				<fieldset class="contact-info">
+					<legend>Contact Information</legend>
+					<ul>
+					  <li class="clearfix">
+						<label for="name">Full Name</label>
+						<input type="text" id="name" name="user_name" placeholder="Required">
+					  </li>
+					  <li class="clearfix">
+						<label for="mail">Email Address</label>
+						<input type="email" id="mail" name="user_email" placeholder="Required">
+					  </li>
+					  <li class="clearfix">
+						<label for="tel">Phone Number</label>
+						<input type="tel" id="tel" name="user_tel">
+                      </li>
+                      <li class="clearfix">
+						<label for="street-address">Street Address</label>
+						<textarea id="street-address" name="user_address"></textarea>
+					  </li>
+					  <li class="clearfix">
+						<label for="city">City</label>
+						<input type="text" id="city" name="user_city">
+					  </li>
+					  <li class="selection clearfix">
+						<label for="state">State</label>
+						<select id="state">
+							<option class="choose-state">Choose State</option>
+						   	<optgroup label="Americas">
+								<option>America(U.S)</option>
+								<option>Canada</option>
+							</optgroup>
+							<optgroup label="Europe">
+								<option>France</option>
+								<option>United Kingdom</option>
+							</optgroup>
+							<optgroup label="Africa">
+								<option>Johannesburg</option>
+							</optgroup>
+							<optgroup label="Middle-East">	
+								<option>Israel</option>
+							</optgroup>
+							<optgroup label="Asia">
+								<option>China</option>	
+								<option>Japan</option>
+								<option>Korea</option>
+								<option>India</option>
+							</optgroup>
+							<optgroup label="Asean">
+								<option>Philippines</option>
+								<option>Indonesia</option>
+								<option>Thailand</option>
+								<option>Myanmar</option>
+								<option>Vietnam</option>
+								<option>Malaysia</option>
+								<option>Singapore</option>
+							</optgroup>
+						</select><br>
+					 </li>
+					<li class="clearfix">
+						<label for="zipcode">Zip Code</label>
+						<input type="text" pattern="[0-9]*" id="zipcode" name="user_zipcode">
+				    </li>
+				 </ul>
+						
+				</fieldset>
+			</div>
+			<div class="newsletter-fieldset">
+				<fieldset class="newsletter">
+					<legend>Newsletter</legend>
+					<p>Select the newsletters you would like to receive:</p>
+
+					<input type="checkbox" id="html-news" value="html-news" name="user-html-news">
+					<label for="html-news">HTML News</label><br>
+
+					<input type="checkbox" id="css-news" value="css-news" name="user-css-news">
+					<label for="css-news">CSS News</label><br>
+
+					<input type="checkbox" id="javascript-news" value="javascript-news" name="user-javascript-news">
+					<label for="javascript-news">Javascript News</label>
+				
+					<p>Newsletter format</p>
+					<div class="radio-div">
+						<input type="radio" id="html" name="news-format">			
+						<label class="radio-html" for="html">HTML</label>
+						<div class="check-html"></div>
+					</div>
+
+					<div class="radio-div">
+						<input type="radio" id="plain-text" name="news-format">
+						<label class="radio-text" for="plain-text">Plain text</label>
+						<div class="check-text"></div>
+					</div>
+				</fieldset>
+				<p class="suggestion-p">Other topics you'd like to hear about:</p>
+				<textarea class="suggestion-box"></textarea>
+			</div>
+				
+			<button id="submit-button" type="submit">Sign Up</button>
+		</form>
+		<footer>Copyright The Code Review</footer>
+  </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+

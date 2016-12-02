@@ -1,0 +1,65 @@
+/*************************
+MEDIA QUERIES
+*************************/
+@media only screen and (min-width: 760px) {
+	.main-wrapper {
+		max-width: 760px;
+		margin: 0 auto;
+		padding: 0 50px;
+	}
+
+	ul li {
+		width: 100%;
+		margin-bottom: 20px;
+	}
+
+	.contact-info label {
+		display: inline-block;
+		padding: 12px 0;
+		margin: 0;
+		width: 30%;
+	}
+
+	.contact-info input {
+		display: inline-block;
+		float: right;
+		width: 70%;
+		
+	}
+
+	#street-address {
+		display: inline-block;
+		float: right;
+		width: 70%;
+		margin-bottom: 20px;
+	}
+
+	#state {
+		display: inline-block;
+		float: right;
+		width: 70%;
+	}
+
+	#zipcode {
+		display: inline-block;
+		float: right;
+		margin-right: 124px;
+		margin-bottom: 20px;
+	}
+
+	.suggestion-box {
+		height: 8em;
+	}
+
+
+	
+}
+
+/******************************
+CLEAR FIX
+*******************************/
+.clearfix::after {
+	content: "";
+	display: table;
+	clear: both;
+}
